@@ -1,0 +1,40 @@
+<html>
+  <script type="application/javascript" src="caesar-cipher-breaker.js"></script>
+  <link rel="Stylesheet" href="style.css" type="text/css" media="all"/>
+<form action="#" method="get" onsubmit="return false">
+  <table class="noborder">
+    <tbody>
+      <tr>
+        <td><label for="text">Text:</label></td>
+        <td><textarea id="text" cols="50" rows="10" style="width: 40em; height: 15em;">GUVF VF FBZR FNZCYR GRKG URER.</textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="button" value="Break code" onclick="doBreak()"/></td>
+      </tr>
+      <tr>
+        <td>Shift:</td>
+        <td>
+          <input type="text" value="0" readonly="readonly" id="shift" style="width: 4em;"/>
+          <input type="button" value="Up" onclick="setShift(getShift()+1)"/>
+          <input type="button" value="Down" onclick="setShift(getShift()-1)"/>
+        </td>
+      </tr>
+      <tr>
+            <td>Best guesses:</td>
+            <td>
+            <table class="col1right col2right" style="font-size:70%; margin-top:0em">
+            <thead>
+            <tr>
+            <th>Shift</th>
+            <th colspan="2">Entropy per letter (bits) <span style="font-weight:normal">(lower is better)</span></th>
+            </tr>
+            </thead>
+            <tbody id="guesses"></tbody>
+            </table>
+            </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+</html>
