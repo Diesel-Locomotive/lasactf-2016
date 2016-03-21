@@ -1,0 +1,4 @@
+Helpful
+Type: Miscellaneous
+-----
+Running the command /help credits will bring up authors of the freenode help file; Daniel Hemmerich, a.k.a. 'zartik', appears on the server log.
