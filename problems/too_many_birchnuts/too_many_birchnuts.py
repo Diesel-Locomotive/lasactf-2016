@@ -3,7 +3,7 @@ poison_tree_limit = 33224202171613280406600885863289624718
 trees_cut = 0
 day = 1
 
-def get_poison_amount():
+def get_poison_amount(): #TODO fix this junk to work properly with more than one year
     if (day < 3) or (21 <= (day % 72) <= 36):
         return 0.0
     elif day >= 3:
