@@ -62,8 +62,7 @@ sock.connect(("web.lasactf.com", 4056)) # Make connection
 
 while True:
     problem = sock.recv(256) # Get the problem from the server
-    print ("RECIEVE: " + problem.decode("utf-8"))
-    answer = break_cipher(problem.decode("utf-8")) # Answer the problem
+    print ("RECIEVE: " + problem)
+    answer = break_cipher(problem) # Answer the problem
     print ("SEND: " + answer)
-    sock.send((answer + "\r").encode())
-
+    sock.send((answer))
