@@ -3,3 +3,7 @@ Overflow Info:
 0-32: Echoes input
 32-52: Echoes input + hex values at end
 53+: Segmentation fault
+
+
+Starts misbehaving at 32, likely when overflow starts
+This indicates that the "sub 0x20" (32 bytes) line in the objdump is where it gets the input
