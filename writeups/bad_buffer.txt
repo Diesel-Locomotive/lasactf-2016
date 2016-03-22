@@ -1,0 +1,5 @@
+Overflow Info:
+
+0-32: Echoes input
+32-52: Echoes input + hex values at end
+53+: Segmentation fault
